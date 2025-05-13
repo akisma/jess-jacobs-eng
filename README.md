@@ -1,2 +1,2 @@
-# jessj-jacobs-eng
+# jess-jacobs-eng
 portfolio website

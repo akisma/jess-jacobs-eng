@@ -1,6 +1,6 @@
 <template>
   <div class="management-container">
-    <h1>Hello World - Management</h1>
+    <h1>Management</h1>
   </div>
 </template>
 

@@ -9,27 +9,33 @@ const navigateTo = (path) => {
 </script>
 
 <template>
-  <!-- <div class="header-container">
-    <h1 class="header">Jess Jacobs</h1>
-  </div> -->
   <div class="content-container">
-    <div class="content-item engineering" @click="navigateTo('/engineering')">
-      <h2>Engineering</h2>
+    <div class="content-item engineering shadow-5g" @click="navigateTo('/engineering')">
+      <div class="container-background bg-[#7cc0ff]/66 w-full h-full">
+        <h2 class="text-right">Engineering</h2>
+      </div>
     </div>
-    <div class="content-item management" @click="navigateTo('/management')">
-      <h2>Management</h2>
+    <div class="content-item management shadow-5g" @click="navigateTo('/management')">
+      <div class="container-background bg-[#7cc0ff]/66 w-full h-full">
+        <h2>Management</h2>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped>
+
+h2 {
+  background-color: rgba(11, 34, 75, 0.5);
+}
+
 .header-container {
-  width: 100%; /* Make it span the full width */
+  width: 100%; 
   text-align: center;
-  margin: 0; /* Remove default margins */
-  padding: 20px 0; /* Add vertical padding */
-  background-color: white; /* Optional: Add a background color */
-  display: block; /* Ensure it takes up its own row */
+  margin: 0; 
+  padding: 20px 0; 
+  background-color: white; 
+  display: block; 
 }
 
 .header {
@@ -40,10 +46,10 @@ const navigateTo = (path) => {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin-top: 20px; /* Add spacing below the header */
+  margin-top: 20px; 
   width: 100%;
-  padding: 0 10px; /* Add padding to prevent content from touching edges */
-  box-sizing: border-box; /* Include padding in width calculation */
+  padding: 0 10px; 
+  box-sizing: border-box; 
 }
 
 .content-item {
@@ -53,9 +59,13 @@ const navigateTo = (path) => {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: rgba(11, 34, 75, 0.735);
-  border: 1px solid rgba(20, 20, 204, 0.844);
+  border: 2px solid rgba(12, 57, 121, 0.844);
   color: #f1eaea;
+}
+
+.container-background {
+  display: flex;
+  align-items: center;
 }
 
 .content-item.engineering {
@@ -63,7 +73,15 @@ const navigateTo = (path) => {
   background-image: url('/eng.png');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; /* Ensure the image covers the entire container */
+  background-size: cover; 
+}
+
+.content-item.management {
+  background: rgba(11, 34, 75, 0.5);
+  background-image: url('/mgmt.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; 
 }
 
 </style>

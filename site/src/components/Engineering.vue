@@ -1,6 +1,6 @@
 <template>
   <div class="engineering-container">
-    <h1>Hello World - Engineering</h1>
+    <h1>Engineering</h1>
   </div>
 </template>
 

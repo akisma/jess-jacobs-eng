@@ -9,9 +9,9 @@ const navigateTo = (path) => {
 </script>
 
 <template>
-  <div class="header-container">
+  <!-- <div class="header-container">
     <h1 class="header">Jess Jacobs</h1>
-  </div>
+  </div> -->
   <div class="content-container">
     <div class="content-item engineering" @click="navigateTo('/engineering')">
       <h2>Engineering</h2>
@@ -53,11 +53,17 @@ const navigateTo = (path) => {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+  background-color: rgba(11, 34, 75, 0.735);
+  border: 1px solid rgba(20, 20, 204, 0.844);
+  color: #f1eaea;
 }
 
-.content-item.management {
-  background-color: #e0e0e0;
+.content-item.engineering {
+  background: rgba(11, 34, 75, 0.5);
+  background-image: url('/eng.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* Ensure the image covers the entire container */
 }
+
 </style>
